@@ -385,7 +385,7 @@ void cloud_cb (const sensor_msgs::PointCloud2ConstPtr& cloud_msg)
   geometry_msgs::Point p;
   p.x = 0; p.y = 0; p.z = 0;
   arrow.points.push_back(p);
-  p.x = 1; p.y = deltaD*0.7; p.z = 0.0;
+  p.x = 1; p.y = deltaD*0.5; p.z = 0.0;
   //p.y = deltaD*50; p.x = 0; p.z = 1.0;
   arrow.points.push_back(p);  
   marker_pub.publish(arrow);
